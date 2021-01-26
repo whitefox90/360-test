@@ -1,0 +1,14 @@
+{
+  "name": "test-360-reviewapp",
+  "version": "1.0.0",
+  "description": "тесты для 360-reviewapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "Marina",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^6.2.1"
+  }
+}

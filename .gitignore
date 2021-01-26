@@ -1,0 +1,4 @@
+cypress\integration\const\password.js
+node_modules
+debug.log
+.idea
