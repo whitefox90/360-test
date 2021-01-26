@@ -1,7 +1,7 @@
-import username from "../integration/const/username";
+import username from "../integration/authorization/const/username";
 
-const {usernameLocator} = require('../integration/const/locators');
-const {passwordLocator} = require('../integration/const/locators');
+const {usernameLocator} = require('../integration/authorization/const/locators');
+const {passwordLocator} = require('../integration/authorization/const/locators');
 
 
 Cypress.Commands.add("login", (username, password) => {
