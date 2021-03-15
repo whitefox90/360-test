@@ -10,9 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^6.6.0",
-    "cypress-sql-server": "^1.0.0",
-    "mysql2": "^2.2.5",
-    "webpack": "^5.25.1",
-    "webpack-cli": "^4.5.0"
+    "cypress-sql-server": "^1.0.0"
   }
 }
