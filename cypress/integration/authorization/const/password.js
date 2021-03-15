@@ -1,5 +1,5 @@
 export default {
-    rightPassword: "Ve50348!!!111",
+    rightPassword: "123456",
     passwordIsOneCharacterShorter: "Ve50348!!!11",
     passwordIsOneCharacterLong: "Ve50348!!!1111",
     passwordInRussian:"огвнтргоалмев",
