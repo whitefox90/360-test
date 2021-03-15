@@ -1,5 +1,3 @@
-import password from "./const/password";
-
 const {rightUsername} = require('./const/username');
 const {passwordNothing, passwordInRussian, passwordIsOneCharacterLong, passwordIsOneCharacterShorter} = require('./const/password');
 
