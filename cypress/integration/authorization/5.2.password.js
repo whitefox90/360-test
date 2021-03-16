@@ -18,14 +18,19 @@ const arr = [
         password: passwordIsOneCharacterShorter,
         coment: 'пароль на один символ короче'
     }
-]
+];
+const textOnPage = '#root > div > div.container-fluid.mt-3 > div > div > form > div:nth-child(4) > div';
+const comparisonText = 'Invalid Password!';
+
 describe("Authorization test", () => {
     arr.forEach(row => {
-        let test = it("Проверка пароля " + row.coment, () => {
+         it("Проверка пароля " + row.coment, () => {
             cy.login(rightUsername, row.password)
-
+            cy.get(textOnPage).contains(comparisonText)
+             console.log(row.password)
 
         });
+
     });
 });
 
