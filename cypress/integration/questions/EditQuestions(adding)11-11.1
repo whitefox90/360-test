@@ -1,0 +1,13 @@
+const {rightUsername} = require('../authorization/const/username');
+const {rightPassword} = require('../authorization/const/password');
+
+
+describe('Администратор должен уметь редактировать вопросы(дописывая)', () => {
+    it('By', () => {
+        cy.task('queryDb', `TRUNCATE review360.questions`);
+        cy.login(rightUsername, rightPassword)
+
+        cy.get('#root > div > nav > div.navbar-nav.mr-auto > li:nth-child(4) > a').click()
+
+    })
+})
