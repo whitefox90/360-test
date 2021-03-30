@@ -4,24 +4,24 @@ const {passwordNothing, passwordInRussian, passwordIsOneCharacterLong, passwordI
 const arr = [
     {
         password: passwordNothing,
-        coment: 'без пароля'
+        comment: 'без пароля'
     },
     {
         password: passwordInRussian,
-        coment: 'пароль на русском'
+        comment: 'пароль на русском'
     },
     {
         password: passwordIsOneCharacterLong,
-        coment: 'пароль длиной в один символ'
+        comment: 'пароль длиной в один символ'
     },
     {
         password: passwordIsOneCharacterShorter,
-        coment: 'пароль на один символ короче'
+        comment: 'пароль на один символ короче'
     }
 ]
 describe("Authorization test", () => {
     arr.forEach(row => {
-        let test = it("Проверка пароля " + row.coment, () => {
+         it("Проверка пароля"+ row.comment, () => {
             cy.login(rightUsername, row.password)
 
 
