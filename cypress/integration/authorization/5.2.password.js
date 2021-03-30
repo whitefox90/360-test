@@ -14,17 +14,12 @@ const arr = [
         password: passwordIsOneCharacterLong,
         comment: 'пароль длиной в один символ'
     },
-    {
-        password: passwordIsOneCharacterShorter,
-        comment: 'пароль на один символ короче'
-    }
+
 ]
 describe("Authorization test", () => {
     arr.forEach(row => {
          it("Проверка пароля"+ row.comment, () => {
             cy.login(rightUsername, row.password)
-
-
         });
     });
 });
