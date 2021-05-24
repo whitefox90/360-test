@@ -1,6 +1,6 @@
 export default {
     rightPassword: "123456",
-    passwordIsOneCharacterLong: "Ve50348!!!1111",
+    passwordIsOneCharacterLong: "1",
     passwordInRussian:"огвнтргоалмев",
     passwordNothing: "",
 }
