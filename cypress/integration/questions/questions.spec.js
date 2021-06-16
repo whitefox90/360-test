@@ -18,7 +18,7 @@ const data = [
     },
 ]
 
-describe('login 4', () => {
+describe('questions', () => {
     it('By', () => {
         cy.task('queryDb', `TRUNCATE review360.questions`);
         cy.login(rightUsername, rightPassword)

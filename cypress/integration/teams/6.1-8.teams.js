@@ -44,12 +44,14 @@ describe('teams1', () => {
         const newItemInputLocator = 'input'
         const saveButtonLocator = '#commit > span.MuiButton-label'
 
-        nameteams.forEach((row) => {
+        for(let i=0; i<nameteams.length; i++){
+            const row = nameteams[i]
             cy.get(newButtonLocator).click()
             cy.waitFor(newItemInputLocator)
             cy.get(newItemInputLocator).eq(1).type(row.name);
-            cy.get(saveButtonLocator).click()
-        })
+            cy.get(saveButtonLocator).click();
+        }
+        
     })
 })
 

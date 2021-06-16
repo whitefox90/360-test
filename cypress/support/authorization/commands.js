@@ -8,9 +8,15 @@ Cypress.Commands.add("login", (username = rightUsername, password = rightPasswor
     cy.visit("/");
     cy.contains('Login').click()
 
-    cy.get(usernameLocator)
-        .type(username)
+    if(!username || !username.length) {
+        cy.get(usernameLocator)
+            .clear()
+    } else {
 
+        cy.get(usernameLocator)
+            .type(username)
+
+    }
     if (password.length > 0) {
         cy.get(passwordLocator)
             .type(password)

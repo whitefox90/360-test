@@ -9,8 +9,7 @@
   "author": "Marina",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.2.1",
-    "cypress-sql-server": "^1.0.0",
-    "mysql2": "^2.2.5"
+    "cypress": "^6.6.0",
+    "cypress-sql-server": "^1.0.0"
   }
 }

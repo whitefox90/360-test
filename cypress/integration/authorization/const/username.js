@@ -1,7 +1,6 @@
 export default {
   rightUsername:"super",
-  usernameShorte: "supe",
-  usernameLong: "superr",
+  UsernameNothing: "",
   usernameInRussian: "ыгзук",
   usernameNumber: "56485",
 }
